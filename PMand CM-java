@@ -1,0 +1,70 @@
+class PM
+{
+    static String PM_name ="Modi";
+}
+   
+
+class TN
+{
+    static String CM="Vijay";
+    static String Statename="TamilNadu";
+    String dname;
+    int p;
+    public void set_dim(String m,int f)
+    {
+        dname=m;
+        p=f;
+    }
+    public void display()
+    {
+        System.out.println("1.PM:"+PM.PM_name);
+        System.out.println("2.State:"+Statename);
+        System.out.println("3.CM:"+CM);
+        System.out.println("4.District:"+dname);
+        System.out.println("5.Population:"+p);
+    }
+    
+}
+class AP
+{
+    static String CM="Pawan kalyan";
+    static String Statename="AndhraPradesh";
+    String dname;
+    int p;
+    public void set_dim(String m,int f)
+    {
+        dname=m;
+        p=f;
+    }
+    public void display()
+    {
+        System.out.println("1.PM:"+PM.PM_name);
+        System.out.println("2.State:"+Statename);
+        System.out.println("3.CM:"+CM);
+        System.out.println("4.District:"+dname);
+        System.out.println("5.Population:"+p);
+    }
+    
+}
+public class Main
+{
+    public static void main(String[] args)
+    {
+        TN a=new TN();
+        TN b=new TN();
+        a.set_dim("Pattukkottai",250);
+        b.set_dim("Thanjavur",150);
+        a.display();
+        b.display();
+        AP c=new AP();
+        AP d=new AP();
+        AP e=new AP();
+        c.set_dim("Tirupati",550);
+        d.set_dim("Tada",350);
+        e.set_dim("Guntur",650);
+        c.display();
+        d.display();
+        e.display();
+    }
+}
+
